@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technical Skills | Rupal Gupta</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #080b20, #101d4b, #291451);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 7%;
+            background: #080b20;
+            border-bottom: 1px solid #302d67;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 25px;
+        }
+
+        .logo span {
+            color: #c084fc;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #d18aff;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+            padding: 65px 30px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .heading .subtitle {
+            color: #51dfff;
+            letter-spacing: 5px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .heading h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .heading h1 span {
+            color: #c084fc;
+        }
+
+        .heading p {
+            color: #cbd5e1;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid #6556d9;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #4de7ff;
+            box-shadow: 0 0 25px rgba(123, 91, 255, 0.35);
+        }
+
+        .icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+            background: #172653;
+            border: 2px solid #8b75ff;
+        }
+
+        .cpp {
+            color: #56d9ff;
+            border-color: #56d9ff;
+        }
+
+        .html-icon {
+            color: #ff795e;
+            border-color: #ff795e;
+        }
+
+        .css-icon {
+            color: #58aaff;
+            border-color: #58aaff;
+        }
+
+        .git {
+            color: #ff806b;
+            border-color: #ff806b;
+        }
+
+        .card h2 {
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            font-size: 15px;
+            line-height: 1.7;
+            min-height: 105px;
+        }
+
+        .tag {
+            margin-top: 20px;
+            padding: 11px 8px;
+            border: 1px solid #6254c7;
+            border-radius: 25px;
+            color: #70e7ff;
+            background: rgba(111, 83, 255, 0.15);
+            font-size: 13px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        .footer p {
+            color: #d4a1ff;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 8px;
+            background: #7655ed;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: #9b69ff;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 1000px) {
+            .skills {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .heading h1 {
+                font-size: 35px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">Rupal's <span>Portfolio</span></h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="Technical%20skills.html" class="active">
+                Technical skills
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="heading">
+            <p class="subtitle">MY SKILLS</p>
+
+            <h1>Technical <span>Skills</span></h1>
+
+            <p>
+                I enjoy learning new technologies, solving problems
+                and creating beautiful websites. Here are the
+                technical skills I am developing.
+            </p>
+        </div>
+
+        <div class="skills">
+
+            <div class="card">
+                <div class="icon c">C</div>
+
+                <h2>C</h2>
+
+                <p>
+                    I use C to solve problems and improve
+                    my programming and logical thinking skills.
+                </p>
+
+                <div class="tag">Problem Solving</div>
+            </div>
+
+            <div class="card">
+                <div class="icon html-icon">5</div>
+
+                <h2>HTML</h2>
+
+                <p>
+                    I use HTML to create the structure
+                    of websites and organise web content.
+                </p>
+
+                <div class="tag">Web Structure</div>
+            </div>
+
+            <div class="card">
+                <div class="icon css-icon">3</div>
+
+                <h2>CSS</h2>
+
+                <p>
+                    I use CSS to style websites with colours,
+                    layouts, spacing and attractive designs.
+                </p>
+
+                <div class="tag">Design & Styling</div>
+            </div>
+
+            <div class="card">
+                <div class="icon git">◆</div>
+
+                <h2>Git & GitHub</h2>
+
+                <p>
+                    I use Git and GitHub to manage code,
+                    track changes and share my projects.
+                </p>
+
+                <div class="tag">Version Control</div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Keep Learning. Keep Building. Keep Growing.</p>
+
+            <a href="index.html" class="back">
+                &#8592; Back to Home
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>
